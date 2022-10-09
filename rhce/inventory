@@ -1,0 +1,12 @@
+[Clients]
+10.0.2.10
+10.0.2.11
+[WebServers]
+10.0.2.12
+10.0.2.13
+[AllNotReal:children]
+Clients
+WebServers
+
+[Clients:vars]
+ansible_user=ansible
