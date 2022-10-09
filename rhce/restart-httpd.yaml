@@ -1,0 +1,7 @@
+---
+ - gather_facts: no
+   hosts: client1
+   tasks:
+          - service:
+                    name: httpd
+                    state: restarted
