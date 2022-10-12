@@ -1,0 +1,14 @@
+---
+ - name: View the host variables
+   hosts: client1
+   gather_facts: yes
+   tasks:
+     - debug:
+              msg: "This is a test."
+     - debug: 
+              msg: "The http port is {{ http_port }}."
+
+     - debug: 
+              msg: "The Package is {{ pkg }}."
+
+

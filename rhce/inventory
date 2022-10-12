@@ -1,5 +1,5 @@
 [Clients]
-client1 ansible_host=10.0.2.6
+client1 ansible_host=10.0.2.6 http_port=9999 pkg=httpd
 10.0.2.10
 10.0.2.11
 [WebServers]
@@ -11,3 +11,6 @@ WebServers
 
 [Clients:vars]
 ansible_user=ansible
+http_port=8888
+pkg=httpd
+

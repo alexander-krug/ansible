@@ -1,0 +1,6 @@
+#attention: this is the dictionary format, so there is ":" and a space 
+#afterwards instead of "="
+
+#this has priority over anything in the inventory
+http_port: 1234
+pkg: httpd

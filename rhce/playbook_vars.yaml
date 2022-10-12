@@ -1,0 +1,23 @@
+---
+ - name: View all the host variables
+   hosts: client1
+   vars: 
+          http_port2: 5678
+          pkg_1: httpd
+   tasks:
+          - name: Get the value of http_port:
+              debug:
+                    msg: "The value of http_port is {{ http_port }}."
+
+          - name: Get the value of pkg:
+            debug:
+                    msg: "The value of pkg is {{ pkg }}."
+
+          - name: Get the value of http_port1:
+            debug:
+                    msg: "The value of http_port1 is {{ http_port1 }}."
+
+          - name: Get the value of pkg1:
+            debug:
+                    msg: "The value of pkg1 is {{ pkg1 }}."
+
